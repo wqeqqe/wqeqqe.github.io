@@ -51,7 +51,13 @@
 <script language="javascript">
 	var now = new Date();
 	function time_display(){
-		document.getElementById("demo").innerHTML = (now.getMonth()+1) + "-" + now.getDate() + "-" + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+		document.getElementById("demo").innerHTML = (now.getMonth()+1) + "-" + now.getDate() + "-" + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":";
+		if (now.getSeconds() < 10){
+			document.getElementById("demo").innerHTML += ("0" + now.getSeconds());
+}
+		else{
+			document.getElementById("demo").innerHTML += now.getSeconds();
+}
 }
 	time_display();
 	function time_proceeding() {
