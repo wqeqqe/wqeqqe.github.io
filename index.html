@@ -1,0 +1,62 @@
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Extremely Simple Introduction</title>
+		<link rel="icon" href="logo.ico" type="text/css">
+		<audio src="background_music.mp3" autoplay loop></audio>
+	</head>
+	<body background = "background.jpg">
+
+<!-empty place & time->
+		<div style="width:1200px;height:100px;text-align:right;">
+			<p id="demo"></p>
+			<a href="javascript"></a>
+		</div>
+		<div style="width:40px;height:1200px;float:left;">
+		</div>
+
+<!-picture->
+		<div style="width:320px;height:1200px;border:10px;float:left;">
+			<img src="picture.png" alt="X ERROR X" width="240px" height="300px">
+			<p>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ren-Hao,Chiou</p>
+		</div>
+
+<!-content->
+		<div style="height:1200px;">
+			<h2><span style="border:3px blue solid;">●Self Introduction</span></h2>
+			<p>My name is Ren-Hao,Chiou(邱仁皓).I graduated from <a href="https://www2.ck.tp.edu.tw/" onmouseover="this.style.color='red';" onmouseout="this.style.color='';">Taipei Municipal Jianguo High School</a> in 2019, and now study in <a href="https://web.ee.ntu.edu.tw/" onmouseover="this.style.color='red';" onmouseout="this.style.color='';">National Taiwan University 
+			Department of Electrical Engineering.</a>
+			</p>
+			<h2><span style="border:3px blue solid;">●Hobbies</span></h2>
+			<p>&nbsp;&nbsp <font size="5">1.<b>watching movies:</b></font>Especially comedies and action movies.You can check movies available in Taiwan theaters in <a href="https://www.vscinemas.com.tw/vsweb/index.aspx" onmouseover="this.style.color='red';" onmouseout="this.style.color='';">VIESHOW CINEMAS</a>.
+			</p>
+			<p>&nbsp;&nbsp <font size="5">2.<b>playing board games:</b></font>Sometimes I play board games in a store called <a href="https://deroot68.wixsite.com/deroot" onmouseover="this.style.color='red';" onmouseout="this.style.color='';">Deroot</a> with classmates in high school.
+			</p>
+			<p>&nbsp;&nbsp <font size="5">3.<b>sleeping:</b></font>Check the tips for quality sleep <a href="https://www.youtube.com/watch?v=072tU1tamd0" onmouseover="this.style.color='red';" onmouseout="this.style.color='';">here</a>.
+			</p>
+		</div>
+<!-not important->
+		<div align="center">
+			<p>告訴我可以改進的地方: &nbsp &nbsp 
+			<input type>
+			&nbsp;&nbsp;
+			<input type="button" id="click" value="確定" onclick="alert('可惜我不會QQ')"> 
+			</p>
+		</div>
+
+	</body>
+</html>
+
+<script language="javascript">
+	var now = new Date();
+	function time_display(){
+		document.getElementById("demo").innerHTML = (now.getMonth()+1) + "-" + now.getDate() + "-" + now.getFullYear() + " " + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+}
+	time_display();
+	function time_proceeding() {
+		now = new Date();
+		time_display();
+	}
+	var timer = setInterval(time_proceeding,1000);
+</script>
